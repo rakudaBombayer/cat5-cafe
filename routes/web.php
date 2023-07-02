@@ -29,3 +29,4 @@ Route::get('/contact/complete', [ContactController::class, 'complete'])->name('c
 Route::get('/admin/blogs',[AdminBlogController::class, 'index'])->name(name: 'admin.blogs.index');
 Route::get('/admin/blogs/create',[AdminBlogController::class, 'create'])->name(name: 'admin.blogs.create');
 Route::post('/admin/blogs',[AdminBlogController::class, 'store'])->name(name: 'admin.blogs.store');
+Route::get('/admin/blogs/{blog}',[AdminBlogController::class, 'edit'])->name(name: 'admin.blogs.edit');
